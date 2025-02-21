@@ -1,5 +1,7 @@
 class Main {
     static void main(String[] args){
-        println "Hello world"
+        Menu menu = new Menu()
+
+        menu.getMenu()
     }
 }
