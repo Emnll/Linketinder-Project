@@ -6,10 +6,11 @@ class Candidato extends Pessoa{
     int idade
     String cpf
 
-    Candidato(String nome, String email, String estado, String cep, String descricao, int idade, String cpf){
-        super(nome, email, estado, cep, descricao)
+    Candidato(String nome, String email, String estado, String cep, String descricao, int idade, String cpf, List<String> competencias){
+        super(nome, email, estado, cep, descricao, competencias)
         this.idade = idade
         this.cpf = cpf
+
     }
 
     int getIdade(){
