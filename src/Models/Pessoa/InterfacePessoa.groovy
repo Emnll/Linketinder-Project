@@ -10,11 +10,8 @@ interface InterfacePessoa {
     void setEmail(String email)
     String getEstado()
     void setEstado(String estado)
-    String getCEP()
-    void setCEP(String CEP)
+    String getCep()
+    void setCep(String Cep)
     String getDescricao()
     void setDescricao(String descricao)
-
-
-
 }
