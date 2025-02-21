@@ -56,4 +56,12 @@ class Pessoa implements InterfacePessoa {
     void setDescricao(String descricao){
         this.descricao = descricao
     }
+
+    @Override
+    String toString(){
+        return "Nome: $nome\n" +
+                "Email: $email\n" +
+                "Cep: $cep\n" +
+                "Estado: $estado"
+    }
 }

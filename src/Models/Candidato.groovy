@@ -23,4 +23,11 @@ class Candidato extends Pessoa{
     }
 
 
+    @Override
+    String toString(){
+        return "Empresa [${super.toString()}\n" +
+                "Descricao do Candidato: $descricao\n" +
+                "Idade: $idade\n" +
+                "CPF: $cpf\n]"
+    }
 }

@@ -21,4 +21,12 @@ class Empresa extends Pessoa{
     void setPais(String pais){
         this.pais = pais
     }
+
+    @Override
+    String toString(){
+        return "Empresa [${super.toString()}\n" +
+                "Descricao da Empresa: $descricao\n" +
+                "CNPJ: $cnpj\n" +
+                "Pais: $pais\n]"
+    }
 }
