@@ -6,6 +6,12 @@ class Candidato extends Pessoa{
     int idade
     String cpf
 
+    Candidato(String nome, String email, String estado, String cep, String descricao, int idade, String cpf){
+        super(nome, email, estado, cep, descricao)
+        this.idade = idade
+        this.cpf = cpf
+    }
+
     int getIdade(){
         return idade
     }
@@ -25,7 +31,7 @@ class Candidato extends Pessoa{
 
     @Override
     String toString(){
-        return "Empresa [${super.toString()}\n" +
+        return "Candidato [${super.toString()}\n" +
                 "Descricao do Candidato: $descricao\n" +
                 "Idade: $idade\n" +
                 "CPF: $cpf\n]"
