@@ -4,10 +4,12 @@ import Models.Candidato
 import Models.Empresa
 
 class Cadastro {
-    List<Candidato> candidatosCadastrados = []
-    List<Empresa> empresasCadastrados = []
 
-    void cadastroCandidato( Candidato c){
+    List<Candidato> candidatosCadastrados = new ArrayList<>()
+    List<Empresa> empresasCadastrados = new ArrayList<>()
+
+
+    void cadastroCandidato(Candidato c){
         candidatosCadastrados.add(c)
     }
 
@@ -15,4 +17,11 @@ class Cadastro {
         empresasCadastrados.add(e)
     }
 
+    List<Candidato> getCandidatosCadastrados() {
+        return candidatosCadastrados
+    }
+
+    List<Empresa> getEmpresasCadastrados() {
+        return empresasCadastrados
+    }
 }
