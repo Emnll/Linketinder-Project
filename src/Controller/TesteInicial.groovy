@@ -1,3 +1,5 @@
+package Controller
+
 import Models.Candidato
 import Models.Empresa
 
@@ -29,5 +31,6 @@ class TesteInicial {
     ArrayList<Empresa> getEmpresas(){
         return empresas
     }
+
 
 }

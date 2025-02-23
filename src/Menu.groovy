@@ -1,7 +1,6 @@
+import Controller.TesteInicial
 import Models.Candidato
 import Models.Empresa
-
-import java.util.Scanner
 
 class Menu{
 
